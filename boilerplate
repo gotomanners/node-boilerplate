@@ -17,6 +17,8 @@ cp ./templates/app/Makefile ./Makefile
 cp ./templates/test/stub.coffee ./test/stub.coffee
 curl http://twitter.github.com/bootstrap/assets/bootstrap.zip > ./static/bootstrap.zip
 unzip ./static/bootstrap.zip -d ./static
+cp -r ./static/bootstrap/* ./static
+rm -rf ./static/bootstrap ./static/bootstrap.zip
 cp ./templates/views/500.jade ./views/500.jade
 cp ./templates/views/404.jade ./views/404.jade
 cp ./templates/views/index.jade ./views/index.jade
