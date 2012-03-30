@@ -1,7 +1,6 @@
 #!/bin/sh
 echo "Creating necessary folders"
 mkdir ./static
-mkdir ./static/images
 mkdir ./static/css
 mkdir ./static/js
 mkdir ./views
@@ -24,6 +23,7 @@ cp ./templates/views/404.jade ./views/404.jade
 cp ./templates/views/index.jade ./views/index.jade
 cp ./templates/views/layout.jade ./views/layout.jade
 cp ./templates/js/script.coffee ./static/js/script.coffee
+coffee -c ./static/js/script.coffee
 
 echo "Setting up the dependencies from NPM..."
 npm install
