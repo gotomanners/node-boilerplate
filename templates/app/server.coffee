@@ -57,7 +57,7 @@ io.sockets.on "connection", (socket) ->
 server.get "/", (req, res) ->
   res.render "index.jade",
     locals:
-      title: "Your Page Title"
+      title: "Node.js Bootstrap"
       description: "Your Page Description"
       author: "Your Name"
       analyticssiteid: "XXXXXXX"
